@@ -96,7 +96,7 @@
 // console.log(comments[1].text);
 
 //***** FOR LOOPS
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 5; i++) {
   console.log(i);
 }
 
@@ -105,15 +105,37 @@ for (let i = 1; i <= 10; i++) {
 //   console.log(i)
 // }
 
-for (let i = 0; i < 9; i++) {
-  console.log(i);
-}
-console.log('Loop is done.');
+// for (let i = 0; i < 9; i++) {
+//   console.log(i);
+// }
+// console.log('Loop is done.');
 
-for (let i = 0; i <= 101; i += 20) {
-  console.log(i);
+// for (let i = 0; i <= 101; i += 20) {
+//   console.log(i);
+// }
+
+// for (let i = 0; i <= 101; i += 25) {
+//   console.log(i);
+// }
+
+// ***** for loops: looping over an array
+const animals = ['lions', 'tigers', 'bears', 'zebras'];
+for (let i = 0; i < animals.length; i++) {
+  console.log(i + 1, animals[i]);
 }
 
-for (let i = 0; i <= 101; i += 25) {
-  console.log(i);
+for (let i = animals.length - 1; i >= 0; i--) {
+  console.log(i + 1, animals[i].toUpperCase());
 }
+const stooges = ['Moe', 'Larry', 'Curly'];
+for (let i = 0; i < stooges.length; i++) {
+  console.log(stooges[i].toUpperCase());
+}
+
+// ***** for each loops
+
+let movies = ['spaceballs', 'the sting', 'aliens'];
+
+movies.forEach(function (movie) {
+  console.log(movie);
+});
