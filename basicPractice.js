@@ -136,6 +136,68 @@ for (let i = 0; i < stooges.length; i++) {
 
 let movies = ['spaceballs', 'the sting', 'aliens'];
 
-movies.forEach(function (movie) {
-  console.log(movie);
+movies.forEach(function (movie, index) {
+  console.log(index + 1 + '. ' + movie);
 });
+
+let string = 'LOL';
+for (let i = 0; i < string.length; i++) {
+  console.log('outer:', i + ', ' + string[i]);
+  for (let j = 0; j < string.length; j++) {
+    console.log('  inner: ' + j + ') ' + string[j]);
+  }
+}
+
+let seatingChart = [
+  ['Alan', 'Bob', 'Cate'],
+  ['Dee', 'Esther', 'Fran'],
+  ['Grant', 'Heather', 'Isaac'],
+];
+for (let i = 0; i < seatingChart.length; i++) {
+  const row = seatingChart[i];
+  console.log(`Row: ${i + 1}`);
+  for (let j = 0; j < row.length; j++) {
+    console.log(row[j]);
+  }
+}
+
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i, 'even');
+  } else {
+    console.log(i, 'odd');
+  }
+}
+
+let num = -1;
+for (let i = 0; i < 7; i++) {
+  if (num === 9) num = 0;
+  num = num + 2;
+  console.log(num);
+}
+
+let hash = '';
+for (let i = 0; i < 5; i++) {
+  hash += '#';
+  console.log(hash);
+}
+
+for (let i = 1; i < 11; i++) {
+  if (i % 2 === 0) {
+    console.log(i + 1);
+  }
+}
+
+for (i = 1; i <= 20; i++) {
+  if (i === 1) {
+    console.log(i, 'odd');
+  } else if (i === 2) {
+    console.log(2, 'prime, even');
+  } else if (i % 2 === 0) {
+    console.log(i, 'even');
+  } else if (i % 3 !== 0) {
+    console.log(i, 'prime, odd');
+  } else {
+    console.log(i, 'odd');
+  }
+}
