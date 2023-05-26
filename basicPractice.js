@@ -132,72 +132,104 @@ for (let i = 0; i < stooges.length; i++) {
   console.log(stooges[i].toUpperCase());
 }
 
-// ***** for each loops
+// // ***** for each loops
 
-let movies = ['spaceballs', 'the sting', 'aliens'];
+// let movies = ['spaceballs', 'the sting', 'aliens'];
 
-movies.forEach(function (movie, index) {
-  console.log(index + 1 + '. ' + movie);
-});
+// movies.forEach(function (movie, index) {
+//   console.log(index + 1 + '. ' + movie);
+// });
 
-let string = 'LOL';
-for (let i = 0; i < string.length; i++) {
-  console.log('outer:', i + ', ' + string[i]);
-  for (let j = 0; j < string.length; j++) {
-    console.log('  inner: ' + j + ') ' + string[j]);
-  }
-}
+// let string = 'LOL';
+// for (let i = 0; i < string.length; i++) {
+//   console.log('outer:', i + ', ' + string[i]);
+//   for (let j = 0; j < string.length; j++) {
+//     console.log('  inner: ' + j + ') ' + string[j]);
+//   }
+// }
 
-let seatingChart = [
-  ['Alan', 'Bob', 'Cate'],
-  ['Dee', 'Esther', 'Fran'],
-  ['Grant', 'Heather', 'Isaac'],
-];
-for (let i = 0; i < seatingChart.length; i++) {
-  const row = seatingChart[i];
-  console.log(`Row: ${i + 1}`);
-  for (let j = 0; j < row.length; j++) {
-    console.log(row[j]);
-  }
-}
+// let seatingChart = [
+//   ['Alan', 'Bob', 'Cate'],
+//   ['Dee', 'Esther', 'Fran'],
+//   ['Grant', 'Heather', 'Isaac'],
+// ];
+// for (let i = 0; i < seatingChart.length; i++) {
+//   const row = seatingChart[i];
+//   console.log(`Row: ${i + 1}`);
+//   for (let j = 0; j < row.length; j++) {
+//     console.log(row[j]);
+//   }
+// }
 
-for (let i = 1; i <= 10; i++) {
-  if (i % 2 === 0) {
-    console.log(i, 'even');
-  } else {
-    console.log(i, 'odd');
-  }
-}
+// // ***** LOOPS WITH NESTED CONDITIONALS
 
-let num = -1;
-for (let i = 0; i < 7; i++) {
-  if (num === 9) num = 0;
-  num = num + 2;
-  console.log(num);
-}
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i, 'even');
+//   } else {
+//     console.log(i, 'odd');
+//   }
+// }
 
-let hash = '';
-for (let i = 0; i < 5; i++) {
-  hash += '#';
-  console.log(hash);
-}
+// let num = -1;
+// for (let i = 0; i < 7; i++) {
+//   if (num === 9) num = 0;
+//   num = num + 2;
+//   console.log(num);
+// }
 
-for (let i = 1; i < 11; i++) {
-  if (i % 2 === 0) {
-    console.log(i + 1);
-  }
-}
+// let hash = '';
+// for (let i = 0; i < 5; i++) {
+//   hash += '#';
+//   console.log(hash);
+// }
 
-for (i = 1; i <= 20; i++) {
-  if (i === 1) {
-    console.log(i, 'odd');
-  } else if (i === 2) {
-    console.log(2, 'prime, even');
-  } else if (i % 2 === 0) {
-    console.log(i, 'even');
-  } else if (i % 3 !== 0) {
-    console.log(i, 'prime, odd');
-  } else {
-    console.log(i, 'odd');
-  }
-}
+// for (let i = 1; i < 11; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i + 1);
+//   }
+// }
+
+// for (i = 1; i <= 20; i++) {
+//   if (i === 1) {
+//     console.log(i, 'odd');
+//   } else if (i === 2) {
+//     console.log(2, 'prime, even');
+//   } else if (i % 2 === 0) {
+//     console.log(i, 'even');
+//   } else if (i % 3 !== 0) {
+//     console.log(i, 'prime, odd');
+//   } else {
+//     console.log(i, 'odd');
+//   }
+// }
+
+// // ***** while loops
+// let number = 0;
+// while (number < 5) {
+//   console.log(number);
+//   number++;
+// }
+
+// const password = 'BabyEight';
+// let guess = prompt('Enter password');
+// while (guess !== password) {
+//   guess = prompt('Try again');
+// }
+// alert('Correct');
+
+// // ****** break keyword
+
+// let input = prompt('Type something');
+// while (true) {
+//   input = prompt(`You typed: ${input}`);
+//   if (input.toLowerCase() === 'stop') {
+//     break;
+//   }
+// }
+// alert('You entered the correct password and stopped the loop. Click OK.');
+
+// for (i = 1; i < 20; i++) {
+//   console.log(i);
+//   if (i === 7) break;
+// }
