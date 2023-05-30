@@ -233,3 +233,57 @@ for (let i = 0; i < stooges.length; i++) {
 //   console.log(i);
 //   if (i === 7) break;
 // }
+
+// ***** for...of loop
+const subreddits = ['cool', 'books', 'birds'];
+for (let sub of subreddits) {
+  console.log(`Visit reddit.com/r/${sub}`);
+}
+
+// // ***** for...of loop iterating over a string
+// for (let character of 'Hello.') {
+//   console.log(character);
+// }
+
+// let testGreeting = 'Hi!';
+// for (let letter of testGreeting) {
+//   console.log(letter);
+// }
+
+// const arrayOfNumbers = [10, 20, 30];
+// for (let value of arrayOfNumbers) {
+//   value += 1;
+//   console.log(value);
+// }
+
+const numbers = [1, 2, 3, 4, 5, 6];
+for (let currentNumber of numbers) {
+  console.log(currentNumber * currentNumber);
+}
+
+// ***** for...in loop; iterating over an object and object literal
+
+const examScores = {
+  Todd: 88,
+  Sara: 99,
+  Ursala: 77,
+  Victor: 66,
+};
+
+for (let student in examScores) {
+  console.log(student);
+}
+
+for (let student in examScores) {
+  console.log(`${student}: ${examScores[student]}`);
+}
+
+const testObject = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
+
+for (let property in testObject) {
+  console.log(`testObject.${property} is ${testObject[property]}`);
+}
