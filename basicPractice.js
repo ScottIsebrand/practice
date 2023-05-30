@@ -120,17 +120,17 @@ for (let i = 1; i <= 5; i++) {
 
 // ***** for loops: looping over an array
 const animals = ['lions', 'tigers', 'bears', 'zebras'];
-for (let i = 0; i < animals.length; i++) {
-  console.log(i + 1, animals[i]);
-}
+// for (let i = 0; i < animals.length; i++) {
+//   console.log(i + 1, animals[i]);
+// }
 
 for (let i = animals.length - 1; i >= 0; i--) {
   console.log(i + 1, animals[i].toUpperCase());
 }
-const stooges = ['Moe', 'Larry', 'Curly'];
-for (let i = 0; i < stooges.length; i++) {
-  console.log(stooges[i].toUpperCase());
-}
+// const stooges = ['Moe', 'Larry', 'Curly'];
+// for (let i = 0; i < stooges.length; i++) {
+//   console.log(stooges[i].toUpperCase());
+// }
 
 // // ***** for each loops
 
@@ -256,34 +256,89 @@ for (let sub of subreddits) {
 //   console.log(value);
 // }
 
-const numbers = [1, 2, 3, 4, 5, 6];
-for (let currentNumber of numbers) {
-  console.log(currentNumber * currentNumber);
+// const numbers = [1, 2, 3, 4, 5, 6];
+// for (let currentNumber of numbers) {
+//   console.log(currentNumber * currentNumber);
+// }
+
+// // ***** for...in loop; iterating over an object and object literal
+
+// const examScores = {
+//   Todd: 88,
+//   Sara: 99,
+//   Ursala: 77,
+//   Victor: 66,
+// };
+
+// for (let student in examScores) {
+//   console.log(student);
+// }
+
+// for (let student in examScores) {
+//   console.log(`${student}: ${examScores[student]}`);
+// }
+
+// console.log(Object.keys(examScores));
+// console.log(Object.values(examScores));
+// console.log(Object.entries(examScores));
+
+// const testObject = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+// };
+
+// for (let property in testObject) {
+//   console.log(`testObject.${property} is ${testObject[property]}`);
+// }
+
+// ***** FUNCTIONS
+
+// function singSong() {
+//   console.log('Do');
+//   console.log('Re');
+//   console.log('Me');
+// }
+
+// singSong();
+
+// function greeting(firstName) {
+//   console.log(`Hi, ${firstName}`);
+// }
+// greeting('Sam');
+// greeting('Frodo');
+
+// function altGreeting(lastName) {
+//   console.log(`Hi, ${lastName}`);
+// }
+
+// altGreeting('Baggins');
+// altGreeting('Gamgee');
+
+function castSpell(spellName) {
+  console.log(`You cast a ${spellName.toLowerCase()} spell.`);
 }
 
-// ***** for...in loop; iterating over an object and object literal
+castSpell('Detect magic');
 
-const examScores = {
-  Todd: 88,
-  Sara: 99,
-  Ursala: 77,
-  Victor: 66,
-};
+// ***** Functions with multiple arguments
 
-for (let student in examScores) {
-  console.log(student);
+function findLargest(x, y) {
+  if (x > y) {
+    console.log(`${x} is larger`);
+  } else if (y > x) {
+    console.log(`${y} is larger.`);
+  } else if (y === x) {
+    console.log(`${x} and ${y} are equal`);
+  }
 }
 
-for (let student in examScores) {
-  console.log(`${student}: ${examScores[student]}`);
+findLargest(33, 11);
+findLargest(5, 3);
+findLargest(77, 77);
+
+function greeting(firstName, lastName) {
+  console.log(`Hullo, ${firstName} ${lastName[0]}.`);
 }
 
-const testObject = {
-  a: 1,
-  b: 2,
-  c: 3,
-};
-
-for (let property in testObject) {
-  console.log(`testObject.${property} is ${testObject[property]}`);
-}
+greeting('Frodo', 'Baggins');
