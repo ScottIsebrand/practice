@@ -95,10 +95,10 @@
 // ];
 // console.log(comments[1].text);
 
-//***** FOR LOOPS
-for (let i = 1; i <= 5; i++) {
-  console.log(i);
-}
+// //***** FOR LOOPS
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
 
 // //***** This would result in an infinite loop
 // for (let i = 1; i <= 10; i + 1) {
@@ -342,3 +342,38 @@ function greeting(firstName, lastName) {
 }
 
 greeting('Frodo', 'Baggins');
+
+// function repeat(string, numberOfTimes) {
+//   console.log(string.repeat(numberOfTimes));
+// }
+
+// repeat('Hi', 4);
+
+// function repeat(string, numberOfTimes) {
+//   for (i = 0; i < numberOfTimes; i++)
+//     if (i < numberOfTimes) {
+//       console.log(string);
+//     }
+// }
+
+// repeat('Hiya', 3);
+
+function repeat(string, numberOfTimes) {
+  let result = '';
+  for (let i = 0; i < numberOfTimes; i++) {
+    result += string;
+  }
+  console.log(result);
+}
+repeat('Hi. ', 3);
+
+function add(x, y) {
+  if (typeof x !== 'number' || typeof y !== 'number') {
+    return false;
+  }
+  let sum = x + y;
+  return sum;
+}
+
+console.log('Sum of add function: ', add(9, 1));
+console.log('Sum: ', add('a', 1));
