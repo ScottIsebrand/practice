@@ -315,65 +315,58 @@ for (let sub of subreddits) {
 // altGreeting('Baggins');
 // altGreeting('Gamgee');
 
-function castSpell(spellName) {
-  console.log(`You cast a ${spellName.toLowerCase()} spell.`);
-}
-
-castSpell('Detect magic');
-
-// ***** Functions with multiple arguments
-
-function findLargest(x, y) {
-  if (x > y) {
-    console.log(`${x} is larger`);
-  } else if (y > x) {
-    console.log(`${y} is larger.`);
-  } else if (y === x) {
-    console.log(`${x} and ${y} are equal`);
-  }
-}
-
-findLargest(33, 11);
-findLargest(5, 3);
-findLargest(77, 77);
-
-function greeting(firstName, lastName) {
-  console.log(`Hullo, ${firstName} ${lastName[0]}.`);
-}
-
-greeting('Frodo', 'Baggins');
-
-// function repeat(string, numberOfTimes) {
-//   console.log(string.repeat(numberOfTimes));
+// function castSpell(spellName) {
+//   console.log(`You cast a ${spellName.toLowerCase()} spell.`);
 // }
 
-// repeat('Hi', 4);
+// castSpell('Detect magic');
 
-// function repeat(string, numberOfTimes) {
-//   for (i = 0; i < numberOfTimes; i++)
-//     if (i < numberOfTimes) {
-//       console.log(string);
-//     }
-// }
+// ***** VARIABLES
 
-// repeat('Hiya', 3);
+// let changeMe = true;
+// changeMe = false;
+// console.log(changeMe);
 
-function repeat(string, numberOfTimes) {
-  let result = '';
-  for (let i = 0; i < numberOfTimes; i++) {
-    result += string;
-  }
-  console.log(result);
-}
-repeat('Hi. ', 3);
+const entree = 'Enchiladas';
+console.log(entree);
 
-function add(x, y) {
-  if (typeof x !== 'number' || typeof y !== 'number') {
-    return false;
-  }
-  let sum = x + y;
-  return sum;
-}
+// ***** Math assignment operators
+let levelUp = 10;
+let powerLevel = 9001;
+let multiplyMe = 32;
+let quarterMe = 1152;
 
-console.log('Sum of add function: ', add(9, 1));
-console.log('Sum: ', add('a', 1));
+levelUp += 5;
+console.log('The value of level up is', levelUp);
+powerLevel -= 100;
+multiplyMe *= 11;
+quarterMe /= 4;
+
+let favoriteAnimal = 'cat';
+console.log('My favorite animal: ' + favoriteAnimal);
+
+let myName = 'Scott';
+let myCity = 'London';
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
+
+let newVariable = 'Playing around with typeof.';
+console.log(typeof newVariable);
+newVariable = 1;
+console.log(typeof newVariable);
+
+const test1 = 'figuring out quirks';
+console.log(test1);
+
+console.log(typeof test1);
+
+let test2 = 'Str';
+test2 = 'second str';
+test3 = 3;
+console.log(test2);
+console.log(test2 + ' ' + test3);
+console.log(
+  `This template literal interpolates ${test3} and ${test2} into this statement.`
+);
+
+let test4 = test2 + test3;
+console.log(typeof test4);
