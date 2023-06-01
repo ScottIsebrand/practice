@@ -327,46 +327,85 @@ for (let sub of subreddits) {
 // changeMe = false;
 // console.log(changeMe);
 
-const entree = 'Enchiladas';
-console.log(entree);
+// const entree = 'Enchiladas';
+// console.log(entree);
 
-// ***** Math assignment operators
-let levelUp = 10;
-let powerLevel = 9001;
-let multiplyMe = 32;
-let quarterMe = 1152;
+// // ***** Math assignment operators
+// let levelUp = 10;
+// let powerLevel = 9001;
+// let multiplyMe = 32;
+// let quarterMe = 1152;
 
-levelUp += 5;
-console.log('The value of level up is', levelUp);
-powerLevel -= 100;
-multiplyMe *= 11;
-quarterMe /= 4;
+// levelUp += 5;
+// console.log('The value of level up is', levelUp);
+// powerLevel -= 100;
+// multiplyMe *= 11;
+// quarterMe /= 4;
 
-let favoriteAnimal = 'cat';
-console.log('My favorite animal: ' + favoriteAnimal);
+// let favoriteAnimal = 'cat';
+// console.log('My favorite animal: ' + favoriteAnimal);
 
-let myName = 'Scott';
-let myCity = 'London';
-console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
+// let myName = 'Scott';
+// let myCity = 'London';
+// console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
 
-let newVariable = 'Playing around with typeof.';
-console.log(typeof newVariable);
-newVariable = 1;
-console.log(typeof newVariable);
+// let newVariable = 'Playing around with typeof.';
+// console.log(typeof newVariable);
+// newVariable = 1;
+// console.log(typeof newVariable);
 
-const test1 = 'figuring out quirks';
-console.log(test1);
+// const test1 = 'figuring out quirks';
+// console.log(test1);
 
-console.log(typeof test1);
+// console.log(typeof test1);
 
-let test2 = 'Str';
-test2 = 'second str';
-test3 = 3;
-console.log(test2);
-console.log(test2 + ' ' + test3);
+// let test2 = 'Str';
+// test2 = 'second str';
+// test3 = 3;
+// console.log(test2);
+// console.log(test2 + ' ' + test3);
+// console.log(
+//   `This template literal interpolates ${test3} and ${test2} into this statement.`
+// );
+
+// let test4 = test2 + test3;
+// console.log(typeof test4);
+
+// // ***** KELVIN EXERCISE
+
+// // Assign variable kelvin to 293 with const (the variable will not change)
+// let kelvin = 293;
+// kelvin = 301.75;
+// // Assign variable declared as celsius to kelvin (earlier variable) minus 273
+// let celsius = kelvin - 273;
+// // Assign variable fahrenheit to the value of the 3-step equation: step 1) 9 divided by 4, step 2) result of step 1 multiplied by celsius (earlier variable), step 3) result of step 2 plus 32.
+// let fahrenheit = celsius * (9 / 5) + 32;
+// // Round fahrenheit down to the integer of the value of fahrenheit (as was determined above)
+// fahrenheit = Math.floor(fahrenheit);
+// console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`);
+
+// let newton = celsius * (33 / 100);
+// newton = Math.floor(newton);
+
+// console.log(
+//   `The temp is ${kelvin} degrees Kelvin, ${celsius} degrees Celcius, and ${fahrenheit} degrees Fahrenheit.`
+// );
+
+// DOG YEARS EXERCISE
+// Assign the value of 50 to the declared variable myAge
+let myAge = 51;
+// Assign the value of 2 to a variable declare as earlyYears
+let earlyYears = 2;
+// Reassign earlyYears the value of earlyYears multiplied by 10.5
+earlyYears *= 10.5;
+// Declare a variable laterYears and assign to it the value of myAge minus 2
+let laterYears = myAge - 2;
+// Reassign laterYears to the value of laterYears multiplied by 4
+laterYears *= 4;
+console.log('Early: ' + earlyYears + ' ' + 'Later: ' + laterYears);
+// Declare a variable myAgeInDogYears and assign to it the value of earlyYears plus laterYears
+myAgeInDogYears = earlyYears + laterYears;
+myName = 'Scott'.toLowerCase();
 console.log(
-  `This template literal interpolates ${test3} and ${test2} into this statement.`
+  `My name is ${myName}. I am ${myAge} years old, which is ${myAgeInDogYears} in dog years.`
 );
-
-let test4 = test2 + test3;
-console.log(typeof test4);
