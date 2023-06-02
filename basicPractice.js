@@ -391,21 +391,130 @@ for (let sub of subreddits) {
 //   `The temp is ${kelvin} degrees Kelvin, ${celsius} degrees Celcius, and ${fahrenheit} degrees Fahrenheit.`
 // );
 
-// DOG YEARS EXERCISE
-// Assign the value of 50 to the declared variable myAge
-let myAge = 51;
-// Assign the value of 2 to a variable declare as earlyYears
-let earlyYears = 2;
-// Reassign earlyYears the value of earlyYears multiplied by 10.5
-earlyYears *= 10.5;
-// Declare a variable laterYears and assign to it the value of myAge minus 2
-let laterYears = myAge - 2;
-// Reassign laterYears to the value of laterYears multiplied by 4
-laterYears *= 4;
-console.log('Early: ' + earlyYears + ' ' + 'Later: ' + laterYears);
-// Declare a variable myAgeInDogYears and assign to it the value of earlyYears plus laterYears
-myAgeInDogYears = earlyYears + laterYears;
-myName = 'Scott'.toLowerCase();
-console.log(
-  `My name is ${myName}. I am ${myAge} years old, which is ${myAgeInDogYears} in dog years.`
-);
+// // DOG YEARS EXERCISE
+// // Assign the value of 50 to the declared variable myAge
+// let myAge = 51;
+// // Assign the value of 2 to a variable declare as earlyYears
+// let earlyYears = 2;
+// // Reassign earlyYears the value of earlyYears multiplied by 10.5
+// earlyYears *= 10.5;
+// // Declare a variable laterYears and assign to it the value of myAge minus 2
+// let laterYears = myAge - 2;
+// // Reassign laterYears to the value of laterYears multiplied by 4
+// laterYears *= 4;
+// console.log('Early: ' + earlyYears + ' ' + 'Later: ' + laterYears);
+// // Declare a variable myAgeInDogYears and assign to it the value of earlyYears plus laterYears
+// myAgeInDogYears = earlyYears + laterYears;
+// myName = 'Scott'.toLowerCase();
+// console.log(
+//   `My name is ${myName}. I am ${myAge} years old, which is ${myAgeInDogYears} in dog years.`
+// );
+
+// CONDITIONALS
+let sale = true;
+sale = false;
+
+if (sale) {
+  console.log('Time to buy!');
+} else {
+  console.log('Time to wait for a sale.');
+}
+
+let hungerLevel = 7;
+if (hungerLevel > 7) {
+  console.log('Eat!');
+} else {
+  console.log('Eat later.');
+}
+
+let userPet = 'bird';
+if (userPet === 'dog') {
+  console.log('Woof');
+} else if (userPet === 'cat') {
+  console.log('Meow');
+} else {
+  console.log('no pet');
+}
+
+// LOGICAL OPERATORS
+
+let stopLight = 'red';
+let pedestrians = false;
+
+if (stopLight === 'green' && pedestrians === false) {
+  console.log('Go');
+} else if (stopLight === 'yellow' && pedestrians === false) {
+  console.log('Slow');
+} else if (stopLight === 'red') {
+  console.log('Stop');
+}
+
+let mood = 'energized';
+let tirednessLevel = 9;
+
+if (mood === 'sleepy' || tirednessLevel > 8) {
+  console.log('Sleep.');
+} else {
+  console.log('Do not sleep.');
+}
+
+let wordCount = 0;
+wordCount = 7;
+if (wordCount) {
+  console.log('Started.');
+}
+
+let favoritePhrase = '';
+if (favoritePhrase) {
+  console.log('Not empty');
+} else {
+  console.log('Empty');
+}
+
+let tool = '';
+let writingUtensil = tool || 'pen';
+console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+// TERNARY OPERATOR
+
+let isLocked = false;
+isLocked
+  ? console.log('You will need a key to open the door.')
+  : console.log('Open the door.');
+
+let isCorrect = true;
+isCorrect ? console.log('Correct.') : console.log('Wrong.');
+
+let favePhrase = 'Love That!';
+favePhrase === 'Love That!'
+  ? console.log('My fave.')
+  : console.log('Whatever.');
+
+let season = 'summer';
+
+if (season === 'spring') {
+  console.log("It's spring! The trees are budding!");
+} else if (season === 'winter') {
+  console.log("It's winter! Everything is covered in snow.");
+} else if (season === 'fall') {
+  console.log("It's fall! Leaves are falling!");
+} else if (season === 'summer') {
+  console.log("It's sunny and warm because it's summer!");
+}
+
+// ***** SWITCH KEYWORD
+let athleteFinalPosition = 'first place';
+switch (athleteFinalPosition) {
+  case 'first place':
+    console.log('You get the gold');
+    break;
+  case 'second place':
+    console.log('you get the silver');
+    break;
+  case 'third place':
+    console.log('you get bronze');
+    break;
+  default:
+    console.log('no medal');
+    break;
+}
