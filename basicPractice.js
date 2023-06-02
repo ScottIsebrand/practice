@@ -410,97 +410,97 @@ for (let sub of subreddits) {
 //   `My name is ${myName}. I am ${myAge} years old, which is ${myAgeInDogYears} in dog years.`
 // );
 
-// CONDITIONALS
-let sale = true;
-sale = false;
+// // CONDITIONALS
+// let sale = true;
+// sale = false;
 
-if (sale) {
-  console.log('Time to buy!');
-} else {
-  console.log('Time to wait for a sale.');
-}
+// if (sale) {
+//   console.log('Time to buy!');
+// } else {
+//   console.log('Time to wait for a sale.');
+// }
 
-let hungerLevel = 7;
-if (hungerLevel > 7) {
-  console.log('Eat!');
-} else {
-  console.log('Eat later.');
-}
+// let hungerLevel = 7;
+// if (hungerLevel > 7) {
+//   console.log('Eat!');
+// } else {
+//   console.log('Eat later.');
+// }
 
-let userPet = 'bird';
-if (userPet === 'dog') {
-  console.log('Woof');
-} else if (userPet === 'cat') {
-  console.log('Meow');
-} else {
-  console.log('no pet');
-}
+// let userPet = 'bird';
+// if (userPet === 'dog') {
+//   console.log('Woof');
+// } else if (userPet === 'cat') {
+//   console.log('Meow');
+// } else {
+//   console.log('no pet');
+// }
 
-// LOGICAL OPERATORS
+// // LOGICAL OPERATORS
 
-let stopLight = 'red';
-let pedestrians = false;
+// let stopLight = 'red';
+// let pedestrians = false;
 
-if (stopLight === 'green' && pedestrians === false) {
-  console.log('Go');
-} else if (stopLight === 'yellow' && pedestrians === false) {
-  console.log('Slow');
-} else if (stopLight === 'red') {
-  console.log('Stop');
-}
+// if (stopLight === 'green' && pedestrians === false) {
+//   console.log('Go');
+// } else if (stopLight === 'yellow' && pedestrians === false) {
+//   console.log('Slow');
+// } else if (stopLight === 'red') {
+//   console.log('Stop');
+// }
 
-let mood = 'energized';
-let tirednessLevel = 9;
+// let mood = 'energized';
+// let tirednessLevel = 9;
 
-if (mood === 'sleepy' || tirednessLevel > 8) {
-  console.log('Sleep.');
-} else {
-  console.log('Do not sleep.');
-}
+// if (mood === 'sleepy' || tirednessLevel > 8) {
+//   console.log('Sleep.');
+// } else {
+//   console.log('Do not sleep.');
+// }
 
-let wordCount = 0;
-wordCount = 7;
-if (wordCount) {
-  console.log('Started.');
-}
+// let wordCount = 0;
+// wordCount = 7;
+// if (wordCount) {
+//   console.log('Started.');
+// }
 
-let favoritePhrase = '';
-if (favoritePhrase) {
-  console.log('Not empty');
-} else {
-  console.log('Empty');
-}
+// let favoritePhrase = '';
+// if (favoritePhrase) {
+//   console.log('Not empty');
+// } else {
+//   console.log('Empty');
+// }
 
-let tool = '';
-let writingUtensil = tool || 'pen';
-console.log(`The ${writingUtensil} is mightier than the sword.`);
+// let tool = '';
+// let writingUtensil = tool || 'pen';
+// console.log(`The ${writingUtensil} is mightier than the sword.`);
 
-// TERNARY OPERATOR
+// // TERNARY OPERATOR
 
-let isLocked = false;
-isLocked
-  ? console.log('You will need a key to open the door.')
-  : console.log('Open the door.');
+// let isLocked = false;
+// isLocked
+//   ? console.log('You will need a key to open the door.')
+//   : console.log('Open the door.');
 
-let isCorrect = true;
-isCorrect ? console.log('Correct.') : console.log('Wrong.');
+// let isCorrect = true;
+// isCorrect ? console.log('Correct.') : console.log('Wrong.');
 
-let favePhrase = 'Love That!';
-favePhrase === 'Love That!'
-  ? console.log('My fave.')
-  : console.log('Whatever.');
+// let favePhrase = 'Love That!';
+// favePhrase === 'Love That!'
+//   ? console.log('My fave.')
+//   : console.log('Whatever.');
 
-let season = 'summer';
+// let season = 'summer';
 
-if (season === 'spring') {
-  console.log("It's spring! The trees are budding!");
-} else if (season === 'winter') {
-  console.log("It's winter! Everything is covered in snow.");
-} else if (season === 'fall') {
-  console.log("It's fall! Leaves are falling!");
-} else if (season === 'summer') {
-  console.log("It's sunny and warm because it's summer!");
-}
+// if (season === 'spring') {
+//   console.log("It's spring! The trees are budding!");
+// } else if (season === 'winter') {
+//   console.log("It's winter! Everything is covered in snow.");
+// } else if (season === 'fall') {
+//   console.log("It's fall! Leaves are falling!");
+// } else if (season === 'summer') {
+//   console.log("It's sunny and warm because it's summer!");
+// }
 
 // ***** SWITCH KEYWORD
 let athleteFinalPosition = 'first place';
@@ -518,3 +518,29 @@ switch (athleteFinalPosition) {
     console.log('no medal');
     break;
 }
+
+// ** MAGIC EIGHT
+let userName = 'Scott';
+userName ? console.log(`Hello ${userName}.`) : console.log('Hello.');
+let userQuestion = 'Should I stopping trying to learn JavaScript?';
+console.log(`${userName} Asked: ${userQuestion}`);
+let randomNumber = Math.floor(Math.random() * 8);
+let eightBall = '';
+if (randomNumber === 0) {
+  eightBall = 'It is certain';
+} else if (randomNumber === 1) {
+  eightBall = 'It is decidedly so';
+} else if (randomNumber === 2) {
+  eightBall = 'Reply hazy, try again';
+} else if (randomNumber === 3) {
+  eightBall = 'Cannot predict now';
+} else if (randomNumber === 4) {
+  eightBall = 'Do no count on it';
+} else if (randomNumber === 5) {
+  eightBall = 'My sources say no';
+} else if (randomNumber === 6) {
+  eightBall = 'Outlook not so good';
+} else if (randomNumber === 7) {
+  eightBall = 'Signs point to yes';
+}
+console.log(eightBall);
