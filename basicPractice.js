@@ -594,3 +594,122 @@ if (runnersAge > 18 && registeredEarly === true) {
 } else if (runnersAge === 18) {
   console.log(`Number ${raceNumber}, go to registration desk.`);
 }
+
+// ***** FUNCTIONS
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs') {
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+
+makeShoppingList();
+
+// RETURN KEYWORD
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+const numOfMonitors = monitorCount(5, 4);
+console.log(numOfMonitors);
+
+// declaring function inside the function body
+function chairCount(rows, columns) {
+  const numOfChairs = rows * columns;
+  return numOfChairs;
+}
+console.log(chairCount(5, 4));
+
+// Helper functions
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200;
+}
+
+const totalCost = costOfMonitors(5, 4);
+console.log(totalCost);
+
+// Function Expressions
+const plantNeedsWater = function (day) {
+  if (day === 'Wednesday') {
+    return true;
+  } else return false;
+};
+
+plantNeedsWater('Tuesday');
+console.log(plantNeedsWater('Tuesday'));
+
+// Arrow function and concise body
+const cactusNeedsWater = (day) => (day === 'Wednesday' ? true : false);
+
+// Basic function calls
+function greetWorld() {
+  console.log('Hello, world!');
+}
+console.log('Before calling greetWorld');
+greetWorld();
+
+function greetSomeone(name1, name2) {
+  console.log(`Hi, ${name1} and ${name2}`);
+}
+
+greetSomeone('John');
+
+function registerAttendee(firstName, lastName) {
+  console.log(`Attendee: ${firstName} ${lastName}`);
+}
+registerAttendee('John', 'Smith');
+
+function rectangleArea(width, height) {
+  console.log(width * height);
+}
+rectangleArea(3, 5);
+
+function jetFighterType(manufacturer, model) {
+  console.log(`${manufacturer} ${model}`);
+}
+
+jetFighterType('General Dynamics', 'F-16');
+
+function bingoSquare(letter, number) {
+  console.log(`${letter}, ${number}`);
+}
+bingoSquare('I', '13');
+
+function jewelType(color, stone) {
+  console.log(`This jewel is a ${color} ${stone}.`);
+}
+jewelType('red', 'ruby');
+
+function petDescription(color, type) {
+  console.log(`Pet: ${color} ${type}`);
+}
+petDescription('calico', 'cat');
+
+function medicineToTake(name, dose, frequency) {
+  console.log(`Take: ${name} ${dose} ${frequency}`);
+}
+medicineToTake('Aspirin', 'one', 'daily');
+
+function stateCapital(capitalName, stateName) {
+  console.log(`${capitalName} is the capital of ${stateName}.`);
+}
+stateCapital('Sacramento', 'California');
+
+function lunchToday(beverage, sandwichType) {
+  console.log(`I will have ${beverage} with my ${sandwichType} sandwich.`);
+}
+lunchToday('ginger ale', 'turkey with swiss cheese and mustard');
+
+function tennisPlayer(firstName, lastName) {
+  console.log(`${firstName} ${lastName}`);
+}
+tennisPlayer('Carlitos', 'Alcaraz');
+
+function phoneType(manufacturer, model) {
+  console.log(`${manufacturer} ${model}`);
+}
+phoneType('Apple', 'iPhone 12 Pro');
