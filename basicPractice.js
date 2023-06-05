@@ -519,28 +519,78 @@ switch (athleteFinalPosition) {
     break;
 }
 
-// ** MAGIC EIGHT
-let userName = 'Scott';
-userName ? console.log(`Hello ${userName}.`) : console.log('Hello.');
-let userQuestion = 'Should I stopping trying to learn JavaScript?';
-console.log(`${userName} Asked: ${userQuestion}`);
+// // ** MAGIC EIGHT
+// let userName = 'Scott';
+// userName ? console.log(`Hello ${userName}.`) : console.log('Hello.');
+// let userQuestion = 'Should I stopping trying to learn JavaScript?';
+// console.log(`${userName} Asked: ${userQuestion}`);
+// let randomNumber = Math.floor(Math.random() * 8);
+// let eightBall = '';
+// if (randomNumber === 0) {
+//   eightBall = 'It is certain';
+// } else if (randomNumber === 1) {
+//   eightBall = 'It is decidedly so';
+// } else if (randomNumber === 2) {
+//   eightBall = 'Reply hazy, try again';
+// } else if (randomNumber === 3) {
+//   eightBall = 'Cannot predict now';
+// } else if (randomNumber === 4) {
+//   eightBall = 'Do no count on it';
+// } else if (randomNumber === 5) {
+//   eightBall = 'My sources say no';
+// } else if (randomNumber === 6) {
+//   eightBall = 'Outlook not so good';
+// } else if (randomNumber === 7) {
+//   eightBall = 'Signs point to yes';
+// }
+// console.log(eightBall);
+
+let userName = '';
+userName ? console.log(`Hi ${userName}.`) : console.log('Hello.');
+let userQuestion = 'Will tomorrow be an OK day?';
+console.log(userQuestion);
 let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = '';
-if (randomNumber === 0) {
-  eightBall = 'It is certain';
-} else if (randomNumber === 1) {
-  eightBall = 'It is decidedly so';
-} else if (randomNumber === 2) {
-  eightBall = 'Reply hazy, try again';
-} else if (randomNumber === 3) {
-  eightBall = 'Cannot predict now';
-} else if (randomNumber === 4) {
-  eightBall = 'Do no count on it';
-} else if (randomNumber === 5) {
-  eightBall = 'My sources say no';
-} else if (randomNumber === 6) {
-  eightBall = 'Outlook not so good';
-} else if (randomNumber === 7) {
-  eightBall = 'Signs point to yes';
+switch (randomNumber) {
+  case 0:
+    eightBall = 'It is certain';
+    break;
+  case 1:
+    eightBall = 'It is decidedly so';
+    break;
+  case 2:
+    eightBall = 'Try again';
+    break;
+  case 3:
+    eightBall = 'Cannot predict now';
+    break;
+  case 4:
+    eightBall = 'Do not count on it';
+    break;
+  case 5:
+    eightBall = 'My sources say no';
+    break;
+  case 6:
+    eightBall = 'Outlook not so good';
+    break;
+  case 7:
+    eightBall = 'Signs point to yes';
 }
 console.log(eightBall);
+
+// ***** RACE DAY EXERCISE
+let raceNumber = Math.floor(Math.random() * 1000);
+let registeredEarly = true;
+let runnersAge = 11;
+if (runnersAge > 18 && registeredEarly === true) {
+  raceNumber += 1000;
+}
+if (runnersAge > 18 && registeredEarly === true) {
+  console.log(`Number ${raceNumber} races at 9:30 a.m.`);
+} else if (runnersAge > 18 && registeredEarly === false) {
+  console.log(`Number ${raceNumber} runs at 11 a.m.`);
+} else if (runnersAge < 18) {
+  console.log(`Number ${raceNumber} runs at 12:30 p.m.`);
+} else if (runnersAge === 18) {
+  console.log(`Number ${raceNumber}, go to registration desk.`);
+}
