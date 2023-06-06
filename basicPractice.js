@@ -713,3 +713,54 @@ function phoneType(manufacturer, model) {
   console.log(`${manufacturer} ${model}`);
 }
 phoneType('Apple', 'iPhone 12 Pro');
+
+function announcePatient(firstName, lastName) {
+  console.log(`${firstName} ${lastName}, the doctor will see you now.`);
+}
+announcePatient('Dylan', 'Johnson');
+
+function beverageOrder(beverageType, size) {
+  console.log(`I'd like a ${size} ${beverageType}.`);
+}
+beverageOrder('coffee', 'small');
+
+function musicalSelectionILike(title, artist) {
+  console.log(`I like ${title} by ${artist}.`);
+}
+musicalSelectionILike('Sym. No. 7', 'Beethoven');
+
+function formalGreeting(firstName, lastName) {
+  console.log(`Hello, ${firstName} ${lastName}.`);
+}
+formalGreeting('John', 'Smith');
+
+function myPet(name, typeOfAnimal) {
+  console.log(`My pet ${typeOfAnimal} is named ${name}.`);
+}
+myPet('Oliver', 'cat');
+
+function tennisGameScore(player1Score, player2Score) {
+  console.log(`This score is ${player1Score} to ${player2Score}.`);
+}
+tennisGameScore('15', '30');
+
+function areaOfRoom(side1, side2) {
+  console.log(`The room is ${side1 * side2} sq. ft.`);
+}
+areaOfRoom(15, 22);
+areaOfRoom(33, 11);
+
+function favoriteCandybar(candybarName, manufacturer) {
+  console.log(`I like the ${candybarName} candybar by ${manufacturer}.`);
+}
+favoriteCandybar('Lion', 'Nestle');
+
+function nationalCapital(city, country) {
+  console.log(`${city} is the capital of ${country}.`);
+}
+nationalCapital('Washington, D.C.', 'the U.S.A.');
+
+function sizeOfApartmentRoom(length1, length2) {
+  console.log(length1 * length2);
+}
+sizeOfApartmentRoom(15, 20);
