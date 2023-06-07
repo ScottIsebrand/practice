@@ -764,3 +764,36 @@ function sizeOfApartmentRoom(length1, length2) {
   console.log(length1 * length2);
 }
 sizeOfApartmentRoom(15, 20);
+
+// ***** RETURN KEYWORD
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+const numOfMonitors = monitorCount(5, 4);
+console.log(numOfMonitors);
+
+function numOfChairs(rows, columns) {
+  return rows * columns;
+}
+const chairCount = numOfChairs(5, 5);
+console.log(chairCount);
+
+function stateCapital(city = 'Des Moines', state = 'Iowa') {
+  return `${city}, ${state}`;
+}
+const capitalAndState = stateCapital('Austin', 'Texas');
+console.log(capitalAndState);
+
+function sizeOfRoom(length, width) {
+  return length * width;
+}
+const roomSqFt = sizeOfRoom(20, 10);
+console.log(roomSqFt);
+
+function capitalOfCountry(city = 'London', country = 'UK') {
+  return `${city}, ${country}`;
+}
+const capitalAndCountry = capitalOfCountry('Paris', 'France');
+console.log(capitalAndCountry);
