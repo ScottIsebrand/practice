@@ -797,3 +797,95 @@ function capitalOfCountry(city = 'London', country = 'UK') {
 }
 const capitalAndCountry = capitalOfCountry('Paris', 'France');
 console.log(capitalAndCountry);
+
+function fieldArea(length, width) {
+  return length * width;
+}
+const fieldSqFt = fieldArea(60, 11);
+console.log(fieldSqFt);
+
+function greetingAgain(firstName, lastName) {
+  return `Hi, again, ${firstName} ${lastName}.`;
+}
+const secondGreeting = greetingAgain('Sam', 'Smith');
+console.log(secondGreeting);
+
+function numOfDeskChairs(rows, columns) {
+  return rows * columns;
+}
+const deskChairCount = numOfDeskChairs(6, 3);
+console.log(deskChairCount);
+
+function numOfKeyboards(rows, columns) {
+  return rows * columns;
+}
+const keyboardCount = numOfKeyboards(4, 4);
+console.log(keyboardCount);
+
+function seatOfCounty(town, county, state) {
+  return `${town}, ${county} county, ${state}`;
+}
+const countySeat = seatOfCounty('Algona', 'Kossuth', 'Iowa');
+console.log(countySeat);
+
+function numOfHardhats(dayShift, nightShift) {
+  return dayShift * nightShift;
+}
+const hardhatsOrder = numOfHardhats(5, 6);
+console.log(hardhatsOrder);
+
+function pairsOfGloves(mornShift, nightShift) {
+  return mornShift * nightShift;
+}
+const glovesOrder = pairsOfGloves(9, 5);
+console.log(glovesOrder);
+
+function count(a, b, c) {
+  return a + b - c;
+}
+console.log(typeof count(1, 2, ''));
+
+function areaOfOffice(width, length) {
+  return width * length;
+}
+const officeSqFt = areaOfOffice(6, 5);
+console.log(officeSqFt);
+
+function areaOfBed(depth, length, height) {
+  return depth * length * height;
+}
+const bedCubicFeet = areaOfBed(6, 7, 2.5);
+console.log(bedCubicFeet);
+
+function areaOfRoom(width, length, height) {
+  return width * length * height;
+}
+const roomCubicFeet = areaOfRoom(20, 18, 10);
+console.log(roomCubicFeet);
+
+function sizeOfStudio(width, length) {
+  if (width < 0 || length < 0) {
+    return 'No neg integers';
+  }
+  return width * length;
+}
+const studioSize = sizeOfStudio(20, 16);
+console.log(studioSize);
+
+function areaOfDen(width, length) {
+  if (width < 0 || length < 0) {
+    return 'No neg nums';
+  }
+  return width * length;
+}
+const denSqFt = areaOfDen(10, 15);
+console.log(denSqFt);
+
+function areaOfBathroom(width, length) {
+  if (length < 0 || width < 0) {
+    return 'No neg nums allowed';
+  }
+  return length * width;
+}
+const bathroomSqFt = areaOfBathroom(15, 6);
+console.log(bathroomSqFt);
