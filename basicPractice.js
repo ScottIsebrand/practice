@@ -777,8 +777,8 @@ console.log(numberOfMonitors);
 function numOfChairs(rows, columns) {
   return rows * columns;
 }
-const chairCount = numOfChairs(5, 5);
-console.log(chairCount);
+const chairsCount = numOfChairs(5, 5);
+console.log(chairsCount);
 
 function stateCapital(city = 'Des Moines', state = 'Iowa') {
   return `${city}, ${state}`;
@@ -889,3 +889,118 @@ function areaOfBathroom(width, length) {
 }
 const bathroomSqFt = areaOfBathroom(15, 6);
 console.log(bathroomSqFt);
+
+// HELPER FUNCTION
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200;
+}
+
+const finalCost = costOfMonitors(5, 4);
+console.log(finalCost);
+
+// new function
+function numOfStandingDesks(rows, columns) {
+  return rows * columns;
+}
+
+function costOfStandingDesks(rows, columns) {
+  return numOfStandingDesks(rows, columns) * 200;
+}
+const standingDesksCost = costOfStandingDesks(5, 6);
+console.log(standingDesksCost);
+
+// new function
+
+function sizeOfCarpet(length, width) {
+  return length * width;
+}
+
+function costOfCarpet(length, width) {
+  return sizeOfCarpet(length, width) * 20;
+}
+const totalCostOfCarpet = costOfCarpet(5, 5);
+console.log(totalCostOfCarpet);
+
+// new function
+
+function areaOfRug(width, length) {
+  return width * length;
+}
+
+function costOfRug(width, length) {
+  return areaOfRug(width, length) * 10;
+}
+const rugExpense = costOfRug(6, 12);
+console.log(rugExpense);
+
+// new funct
+function areaOfTiles(width, length) {
+  return width * length;
+}
+
+function costOfTiles(width, length) {
+  return areaOfTiles(width, length) * 15;
+}
+
+const totalCostOfTiles = costOfTiles(5, 5);
+console.log(totalCostOfTiles);
+
+// new funct
+
+function multiplyByNineFifths(number) {
+  return number * (9 / 5);
+}
+
+function getFahrenheit(celsius) {
+  return multiplyByNineFifths(celsius) + 32;
+}
+console.log(getFahrenheit(22));
+
+// FUNCTION EXPRESSIONS
+
+const roseNeedsWater = function (day) {
+  if (day === 'Wednesday') {
+    return true;
+  } else return false;
+};
+
+roseNeedsWater('Tuesday');
+console.log(roseNeedsWater('Tuesday'));
+
+const calcArea = function (width, height) {
+  const area = width * height;
+  return area;
+};
+console.log(calcArea(4, 4));
+
+const numOfNewChairs = function (rows, columns) {
+  const newChairsOrder = rows * columns;
+  return newChairsOrder;
+};
+console.log(numOfNewChairs(6, 7));
+
+const lilyNeedsWater = function (day) {
+  if (day === 'Friday') {
+    return true;
+  } else return false;
+};
+console.log(lilyNeedsWater('Tuesday'));
+
+const daisyNeedsWater = function (day) {
+  if (day === 'Friday') {
+    return true;
+  } else return false;
+};
+console.log(daisyNeedsWater('Monday'));
+
+const dogNeedsWater = function (hour) {
+  if (hour === '3pm') {
+    return true;
+  } else return false;
+};
+console.log(dogNeedsWater('3pm'));
