@@ -652,6 +652,16 @@ function greetWorld() {
 console.log('Before calling greetWorld');
 greetWorld();
 
+function sayHowdy(firstName, lastName) {
+  return `Howdy, ${firstName} ${lastName}.`;
+}
+console.log(sayHowdy('Bob', 'Smith'));
+
+function sayBye(firstName = 'Bob') {
+  return `Bye, ${firstName}.`;
+}
+console.log(sayBye('Todd'));
+
 function greetSomeone(name1, name2) {
   console.log(`Hi, ${name1} and ${name2}`);
 }
@@ -1004,3 +1014,27 @@ const dogNeedsWater = function (hour) {
   } else return false;
 };
 console.log(dogNeedsWater('3pm'));
+
+// ARROW FUNCTION
+const bambooNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(bambooNeedsWater('Wednesday'));
+
+const areaOfSquare = (height, width) => {
+  let area = height * width;
+  return area;
+};
+console.log(areaOfSquare(5, 6));
+
+// IMPLICIT RETURN
+const weedNeedsWater = (day) => (day === 'Wednesday' ? true : false);
+console.log(weedNeedsWater('Tuesday'));
+
+const areaOfSq = (height, width) => height * width;
+console.log(areaOfSq(9, 3));
